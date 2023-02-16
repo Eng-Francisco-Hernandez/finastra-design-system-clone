@@ -1,0 +1,197 @@
+.account-card {
+    background-color: $w-100;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.112),0 1px 3px 0 rgba(0,0,0,.096);
+    border-radius: 4px;
+    .body {
+        padding: 20px;
+        height: 100px;
+        display: flex;
+        .left-body {
+            .btn-transparent {
+                background-color: hsl(251, 63%, 96%);
+                pointer-events: none;
+                cursor: not-allowed;
+                border-radius: 50%;
+            }
+            margin-right: 15px;
+            width: 50px;
+        }
+        .right-body {
+            text-align: left;
+            width: 150px;
+            .upper-right-body {
+                .mx-text {
+                    font-size: 16px;
+                }
+                
+            }
+            .lower-right-body {
+                margin: 18px 0 34px 0;
+                .mx-text {
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: 'Futura';
+                }
+                
+            }
+        }
+    }
+    .footer {
+        padding: 10px 20px;
+        border-top: 1px solid $c-25;
+    }
+}
+
+.account-detail-card {
+    background-color: $w-100;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.112),0 1px 3px 0 rgba(0,0,0,.096);
+    border-radius: 4px;
+    .upper-card-section {
+        text-align: left;
+        padding: 20px;
+        h3 {
+            margin-bottom: 10px;
+        }
+        .body {
+            display: flex;
+            .left-body {
+                margin-right: 15px;
+                button {
+                    height: 60px;
+                    background-color: hsl(251, 63%, 96%);
+                    pointer-events: none;
+                    cursor: not-allowed;
+                    border-radius: 50%;
+                }
+            }
+            .right-body {
+                .mx-text {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .lower-card-section {
+        display: flex;
+        text-align: left;
+        padding-bottom: 20px;
+        .mx-text {
+            font-weight: 400;
+        }
+        .left-body {
+            width: 425px;
+            border-right: 1px solid $c-25;
+            padding: 10px 10px 10px 20px;
+        }
+        .right-body {
+            width: 350px;
+            padding: 10px 0 10px 20px;
+        }
+    }
+}
+
+.accounts-grid-card {
+    background-color: $w-100;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.112),0 1px 3px 0 rgba(0,0,0,.096);
+    border-radius: 4px;
+    padding: 16px;
+    .card-header {
+        margin-bottom: 50px;
+        button {
+            &:hover, &:focus, &:active {
+                background-color: #fff;
+            }
+        }
+    }
+    .items-row {
+        display: flex;
+        .column-item {
+            margin: 16px;
+            display: flex;
+            flex-direction: column;
+            button {
+                background-color: hsl(251, 63%, 96%);
+                border-radius: 50%;
+            }
+            .header {
+                margin-top: 10px;
+                .mx-text{
+                    font-size: 18px;
+                    font-weight: 500;
+                } 
+            }
+            .subheader {
+                .mx-text {
+                    opacity: 0.65;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            .content {
+                .mx-text {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.account-overview-card {
+    background-color: $w-100;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.112),0 1px 3px 0 rgba(0,0,0,.096);
+    border-radius: 4px;
+    .card-header {
+        margin-bottom: 50px;
+        button {
+            &:hover, &:focus, &:active {
+                background-color: #fff;
+            }
+        }
+    }
+    .item {
+        display: flex;
+        text-align: left;
+        margin: 20px;
+        button {
+            border-radius: 50%;
+            background-color: hsl(251, 63%, 96%);
+        }
+        .right-content {
+            margin-left: 15px;
+            .header {
+                .mx-text {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .content {
+                opacity: 0.65;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+    }
+    .big-number {
+        margin: 40px 60px 40px 40px;
+        .mx-text {
+            font-size: 28px;
+        }
+        button {
+            font-size: 28px;
+            color: $v-50;
+            &:hover, &:focus, &:active {
+                background-color: #fff;
+            }
+        }
+    }
+    .items {
+        text-align: left;
+        .mx-text {
+            margin: 5px 20px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        border-bottom: 2px solid $c-25;
+    }
+}

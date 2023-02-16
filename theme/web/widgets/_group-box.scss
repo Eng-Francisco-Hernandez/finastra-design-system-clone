@@ -1,0 +1,275 @@
+.mx-groupbox {
+    margin: 0;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.16),0 2px 2px 0 rgba(0,0,0,.112),0 1px 5px 0 rgba(0,0,0,.096);
+    width: 100%;
+    > .mx-groupbox-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        margin: 0;
+        color: $groupbox-default-color;
+        border-width: 1px 1px 0 1px;
+        border-style: solid;
+        border-color: $groupbox-default-bg;
+        background: $w-100;
+        font-size: 12px;
+        border-radius: 5px 5px 0 0;
+        padding: 10px 20px;
+        font-weight: 500;
+        &:hover {
+            background: rgba(0,0,0,.02);
+        }
+        .mx-groupbox-collapse-icon {
+            border: 8px solid transparent;
+            margin-left: 20px;
+            transition: box-shadow .0s, color .0s;
+            border-radius: 30px;
+        }
+        .mx-groupbox-collapse-icon:before {
+            content: "\e259";
+        }
+        .mx-groupbox-collapse-icon:before {
+            content: "\e259";
+        }
+        .mx-groupbox-collapse-icon:hover {
+            box-shadow: inset 0 0 0 0px white;
+            background-color: $v-bg-3;
+            border: 8px solid $v-bg-3;
+        }
+    }
+
+    > .mx-groupbox-body {
+        border-width: 1px;
+        border-style: solid;
+        border-color: $groupbox-default-bg;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    .mx-groupbox-header + .mx-groupbox-body {
+        border-top: none;
+    }
+
+    &.collapsed > .mx-groupbox-header {
+    }
+}
+
+//With header
+.mx-groupbox-header ~ .mx-groupbox-body {
+    border-radius: 0 0 5px 5px;
+}
+
+
+.groupbox-secondary,
+.groupbox-default {
+    @include groupbox-variant($groupbox-default-color, $groupbox-default-bg);
+}
+
+.groupbox-primary {
+    @include groupbox-variant($groupbox-primary-color, $groupbox-primary-bg);
+}
+
+// Success appears as green
+.groupbox-success {
+    @include groupbox-variant($groupbox-success-color, $groupbox-success-bg);
+}
+
+// Warning appears as orange
+.groupbox-warning {
+    @include groupbox-variant($groupbox-warning-color, $groupbox-warning-bg);
+}
+
+// Danger and error appear as red
+.groupbox-danger {
+    @include groupbox-variant($groupbox-danger-color, $groupbox-danger-bg);
+}
+
+.groupbox-transparent {
+    > .mx-groupbox-header {
+        padding: $spacing-small * 1.5 0;
+        color: $gray-darker;
+        border-style: none;
+        background: transparent;
+        font-weight: $font-weight-semibold;
+    }
+
+    .mx-groupbox-body {
+        padding: $spacing-small 0;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid $groupbox-default-bg;
+        background-color: transparent;
+    }
+
+    .mx-groupbox-collapse-icon {
+        color: $brand-primary;
+    }
+}
+
+// Header options
+.groupbox-h1 > .mx-groupbox-header {
+    font-size: $font-size-h1;
+}
+
+.groupbox-h2 > .mx-groupbox-header {
+    font-size: $font-size-h2;
+}
+
+.groupbox-h3 > .mx-groupbox-header {
+    font-size: $font-size-h3;
+}
+
+.groupbox-h4 > .mx-groupbox-header {
+    font-size: $font-size-h4;
+}
+
+.groupbox-h5 > .mx-groupbox-header {
+    font-size: $font-size-h5;
+}
+
+.groupbox-h6 > .mx-groupbox-header {
+    font-size: $font-size-h6;
+}
+
+// Callout Look and Feel
+// .groupbox-callout {
+//     > .mx-groupbox-header,
+//     > .mx-groupbox-body {
+//         border: 0;
+//         background-color: $callout-primary-bg;
+//     }
+
+//     > .mx-groupbox-header {
+//         color: $callout-primary-color;
+//     }
+
+//     .mx-groupbox-header + .mx-groupbox-body {
+//         padding-top: 0;
+//     }
+// }
+
+// .groupbox-success.groupbox-callout {
+//     > .mx-groupbox-header,
+//     > .mx-groupbox-body {
+//         background-color: $callout-success-bg;
+//     }
+
+//     > .mx-groupbox-header {
+//         color: $callout-success-color;
+//     }
+// }
+
+// .groupbox-warning.groupbox-callout {
+//     > .mx-groupbox-header,
+//     > .mx-groupbox-body {
+//         background-color: $callout-warning-bg;
+//     }
+
+//     > .mx-groupbox-header {
+//         color: $callout-warning-color;
+//     }
+// }
+
+// .groupbox-danger.groupbox-callout {
+//     > .mx-groupbox-header,
+//     > .mx-groupbox-body {
+//         background-color: $callout-danger-bg;
+//     }
+
+//     > .mx-groupbox-header {
+//         color: $callout-danger-color;
+//     }
+// }
+
+//Bootstrap variations
+
+.groupbox-info {
+    @include groupbox-variant($groupbox-info-color, $groupbox-info-bg);
+}
+
+.groupbox-inverse {
+    @include groupbox-variant($groupbox-inverse-color, $groupbox-inverse-bg);
+}
+
+.groupbox-white {
+    @include groupbox-variant($groupbox-white-color, $groupbox-white-bg);
+}
+
+.groupbox-info.groupbox-callout {
+    > .mx-groupbox-header,
+    > .mx-groupbox-body {
+        background-color: $callout-info-bg;
+    }
+
+    > .mx-groupbox-header {
+        color: $callout-info-color;
+    }
+}
+
+.mx-groupbox.groupbox-sidenav {
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: none;
+    > .mx-groupbox-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        margin: 0;
+        color: $groupbox-default-color;
+        border: none;
+        background: $w-100;
+        font-size: 12px;
+        border-radius: 5px 5px 0 0;
+        padding: 10px 20px;
+        font-weight: 500;
+        border-left: 10px solid $w-100;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: $c-100;
+        font-weight: 500;
+        &:hover {
+            background-color: $v-bg-1;
+            border-left: 10px solid $v-bg-3;
+        }
+        .mx-groupbox-collapse-icon {
+            border: 8px solid transparent;
+            margin-left: 20px;
+            transition: box-shadow .0s, color .0s;
+            border-radius: 30px;
+        }
+        .mx-groupbox-collapse-icon:before {
+            content: "\e258";
+        }
+        .mx-groupbox-collapse-icon:before {
+            content: "\e258";
+        }
+        .mx-groupbox-collapse-icon:hover {
+            box-shadow: inset 0 0 0 0px white;
+            background-color: $v-bg-3;
+            border: 8px solid $v-bg-3;
+        }
+    }
+
+    > .mx-groupbox-body {
+        border: none;
+        padding: 0;
+        margin: 0;
+        a {
+            padding-left: 50px;
+            font-weight: 200;
+        }
+    }
+
+    .mx-groupbox-header + .mx-groupbox-body {
+        border-top: none;
+    }
+
+    &.collapsed > .mx-groupbox-header {
+    }
+}

@@ -1,0 +1,253 @@
+.color-item-c-100 {
+    @include color-item($c-100, 100px, 50%, $w-100);
+}
+
+.color-item-v-100 {
+    @include color-item($v-100, 100px, 50%, $w-100);
+}
+
+.color-item-f-100 {
+    @include color-item($f-100, 100px, 50%, $w-100);
+}
+
+.color-item-w-100 {
+    @include color-item($w-100, 100px, 50%, $c-100);
+    .color-circle {
+        border: 1px solid $c-25;
+    }
+}
+
+.color-item-variant-c-100-dark {
+    @include color-item-variant($c-100-dark, 70px, 0%, $w-100);
+}
+
+.color-item-variant-c-100 {
+    @include color-item-variant($c-100, 70px, 50%, $w-100);
+}
+
+.color-item-variant-c-75 {
+    @include color-item-variant($c-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-c-50 {
+    @include color-item-variant($c-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-c-25 {
+    @include color-item-variant($c-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-c-10 {
+    @include color-item-variant($c-10, 70px, 0%, $w-100);
+}
+
+.color-item-variant-c-2 {
+    @include color-item-variant($c-2, 70px, 0%, $w-100);
+}
+
+.color-item-variant-v-100-dark {
+    @include color-item-variant($v-100-dark, 70px, 0%, $w-100);
+}
+
+.color-item-variant-v-100 {
+    @include color-item-variant($v-100, 70px, 50%, $w-100);
+}
+
+.color-item-variant-v-75 {
+    @include color-item-variant($v-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-v-50 {
+    @include color-item-variant($v-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-v-25 {
+    @include color-item-variant($v-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-f-100-dark {
+    @include color-item-variant($f-100-dark, 70px, 0%, $w-100);
+}
+
+.color-item-variant-f-100 {
+    @include color-item-variant($f-100, 70px, 50%, $w-100);
+}
+
+.color-item-variant-f-75 {
+    @include color-item-variant($f-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-f-50 {
+    @include color-item-variant($f-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-f-25 {
+    @include color-item-variant($f-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-r-100 {
+    @include color-item-variant($r-100, 70px, 50%, $w-100);
+}
+
+.color-item-variant-r-75 {
+    @include color-item-variant($r-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-r-50 {
+    @include color-item-variant($r-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-r-25 {
+    @include color-item-variant($r-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-o-100 {
+    @include color-item-variant($o-100, 70px, 50%, $c-100);
+}
+
+.color-item-variant-o-75 {
+    @include color-item-variant($o-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-o-50 {
+    @include color-item-variant($o-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-o-25 {
+    @include color-item-variant($o-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-y-100 {
+    @include color-item-variant($y-100, 70px, 50%, $c-100);
+}
+
+.color-item-variant-y-75 {
+    @include color-item-variant($y-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-y-50 {
+    @include color-item-variant($y-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-y-25 {
+    @include color-item-variant($y-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-l-100 {
+    @include color-item-variant($l-100, 70px, 50%, $c-100);
+}
+
+.color-item-variant-l-75 {
+    @include color-item-variant($l-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-l-50 {
+    @include color-item-variant($l-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-l-25 {
+    @include color-item-variant($l-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-g-100 {
+    @include color-item-variant($g-100, 70px, 50%, $c-100);
+}
+
+.color-item-variant-g-75 {
+    @include color-item-variant($g-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-g-50 {
+    @include color-item-variant($g-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-g-25 {
+    @include color-item-variant($g-25, 70px, 0%, $w-100);
+}
+
+.color-item-variant-b-100 {
+    @include color-item-variant($b-100, 70px, 50%, $c-100);
+}
+
+.color-item-variant-b-75 {
+    @include color-item-variant($b-75, 70px, 0%, $w-100);
+}
+
+.color-item-variant-b-50 {
+    @include color-item-variant($b-50, 70px, 0%, $w-100);
+}
+
+.color-item-variant-b-25 {
+    @include color-item-variant($b-25, 70px, 0%, $w-100);
+}
+
+.color-item-vertical-gradient {
+    @include color-item(linear-gradient($v-100, $f-100 70%, #e95247 90%, #e42d1a), 100px, 50%, $w-100);
+}
+
+.color-item-horizontal-gradient {
+    @include color-circle(linear-gradient(90deg,$v-100, $f-100 70%,#e95247 90%,#e42d1a), 100%, 0%, $w-100);
+    margin-top: 30px;
+    height: 60px;
+}
+
+.color-item-success {
+    @include color-item($brand-success, 80px, 50%, $w-100);
+}
+
+.color-item-danger {
+    @include color-item($brand-danger, 80px, 50%, $w-100);
+}
+
+.white-checkmark {
+    transform: rotate(45deg);
+    height: 16px;
+    width: 6px;
+    border-bottom: 2px solid $w-100;
+    border-right: 2px solid $w-100;
+}
+
+.black-checkmark {
+    transform: rotate(45deg);
+    height: 16px;
+    width: 6px;
+    border-bottom: 2px solid $c-100;
+    border-right: 2px solid $c-100;
+}
+
+.white-checkmark-bg {
+    transform: rotate(45deg);
+    height: 26px;
+    width: 12px;
+    border-bottom: 4px solid $w-100;
+    border-right: 4px solid $w-100;
+}
+
+.black-checkmark-bg {
+    transform: rotate(45deg);
+    height: 24px;
+    width: 12px;
+    border-bottom: 3px solid $c-100;
+    border-right: 3px solid $c-100;
+}
+
+
+.white-x {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    &::after{
+        content: '';
+        height: 30px;
+        border-left: 3px solid #fff;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    &::before {
+        content: '';
+        height: 30px;
+        border-left: 3px solid #fff;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+}

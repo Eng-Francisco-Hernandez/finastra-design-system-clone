@@ -1,0 +1,55 @@
+@mixin color-circle($color-circle, $circle-width, $shape, $color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $circle-width;
+    height: $circle-width;
+    line-height: $circle-width;
+    border-radius: $shape;
+    font-size: 32px;
+    color: $color;
+    text-align: center;
+    background: $color-circle;
+    margin-right: 40px;
+}
+
+@mixin color-item($color-circle, $circle-width, $shape, $color) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .color-name {
+        text-transform: uppercase;
+        .mx-text {
+            font-weight: 400;
+        }
+    }
+    .color-circle {
+        @include color-circle($color-circle, $circle-width, $shape, $color);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .color-hex {
+        opacity: .5;
+        font-weight: 300;
+    }
+}
+
+@mixin color-item-variant($color-circle, $circle-width, $shape, $color) {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .color-name {
+        text-transform: uppercase;
+        .mx-text {
+            font-weight: 400;
+        }
+    }
+    .color-circle {
+        @include color-circle($color-circle, $circle-width, $shape, $color);
+        font-size: 26px;
+    }
+    .color-hex {
+        opacity: .5;
+        font-weight: 300;
+    }
+}
